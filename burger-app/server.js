@@ -4,7 +4,7 @@ var express = require("express");
 
 
 // Port with HEROKU deploy
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 6900;
 
 var app = express();
 
@@ -20,7 +20,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Imported Routes
-var routes = require("./controllers/burgersController.js/index.js");
+var routes = require("./controllers/burgersController.js");
 
 app.use(routes);
 
