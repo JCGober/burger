@@ -5,16 +5,16 @@ $(function() {
       var newSleep = $(this).data("newsleep");
   
       var newSleepState = {
-        sleepy: newSleep
+        eaten: newEat
       };
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newSleepState
+        data: newEat
       }).then(
         function() {
-          console.log("changed sleep to", newSleep);
+          console.log("changed sleep to", newEat);
           // Reload the page to get the updated list
           location.reload();
         }
