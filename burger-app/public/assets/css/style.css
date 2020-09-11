@@ -1,17 +1,11 @@
 li {
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     background-color:whitesmoke;
   }
   
   .label {
     font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
   }
   
   .form-group {
@@ -26,11 +20,7 @@ li {
   }
 
   .title{
-
     border: solid 2px black;
-
-
-
   }
 
   
