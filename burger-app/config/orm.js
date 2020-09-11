@@ -1,4 +1,4 @@
-// MySQL/ ORM 
+// MySQL/ ORM Set up
 var connection = require("../config/connection.js");
 
 
@@ -96,4 +96,5 @@ var orm = {
   }
 };
 
+// Export
 module.exports = orm;
