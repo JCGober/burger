@@ -20,7 +20,7 @@ router.post("/api/burgers", function(req, res) {
   burger.create([
     "name", "eaten"
   ], [
-    req.body.name, req.body.eaten
+    req.body.name, 0
   ], function(result) {
     res.json({ id: result.insertId });
   });
@@ -32,7 +32,7 @@ router.put("/api/burgers/:id", function(req, res) {
   console.log("condition", condition);
 
   burger.update({
-    eaten: req.body.eaten
+    eaten: 1
   }, condition, function(result) {
     if (result.changedRows == 0) {
 

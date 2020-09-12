@@ -11,7 +11,6 @@ $(function() {
       //PUT request
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newEatState
       }).then(
         function() {
           console.log("changed eat", newEat);
@@ -27,7 +26,6 @@ $(function() {
   
       var newBurger = {
         name: $("#ca").val().trim(),
-        eaten: $("[name=eaten]:checked").val().trim()
       };
   
       // Post request
